@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ECE6D5;
+    font-size: 62.5%;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+hr {
+    border: 1px solid #000;
+}
+
+.header {
+    background-color: #ECE6D5;
+    height: 99vh;
+}
+
+.header__navigation-wrapper {
+    padding: 4.8vh 2vw;
+}
+
+.header__navigation-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header__navigation-wrapper--big {
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+.header__navigation-wrapper--h1 {
+    text-align: center;
+    font-size: 7.2vw;
+    padding: 3.8vh 0 0 0;
+}
+
+.header__bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 2vw;
+    padding-right: 0;
+}
+
+.header__bottom--image {
+    width: 100%;
+}
+
+.header__bottom--text {
+    width: 30%;
+    position: relative;
+    border-left: 1px solid #000;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.header__bottom-text {
+    position: absolute;
+    bottom: 0;
+}
+
+.header__bottom-text--image {
+    padding: 0 0 1rem 0;
+}
+
+.header__bottom-text--h2 {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.header__bottom-text--span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#regular-roboto {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.padding {
+    padding: 1.5rem;
+}
+
+@media only screen and (min-width:320px) and (max-width: 768px) {
+    body {
+        background-color: #ECE6D5;
+    }
+    
+    .padding ul, hr {
+        display: none;
+    }
+
+    .header__navigation-wrapper--h1 {
+        padding: 0 ;
+    }
+
+    .padding {
+        padding: 10px;
+    }
+    
+    .header__bottom {
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .header__bottom--image {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .header__bottom--text {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6vh;
+    }
+
+    .header__bottom-text {
+        position: relative;
+    }
+
+    #regular-roboto {
+        width: 68%;
+        font-size: 21px;
+        line-height: normal;
+        padding-bottom: 5vh;
+    }
+
+    .header__bottom-text--image {
+        
+        padding: 0 0 2vh 0;
+    }
+
+    .header__bottom-text--h2, .header__bottom-text--span {
+        font-size: 21px;
+    }
+
+}
